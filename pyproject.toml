@@ -8,8 +8,26 @@ packages = [{include = "nijika_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+nonebot-adapter-onebot = "^2.2.0"
+nonebot2 = "^2.0.0rc2"
+nonebot-plugin-apscheduler = "^0.2.0"
+requests = "^2.28.2"
+pillow = "^9.4.0"
+jieba = "^0.42.1"
+wordcloud = "^1.8.2.2"
 
+
+[tool.poetry.group.dev.dependencies]
+nonebug = "^0.2.2"
+pytest-asyncio = "^0.20.3"
+pytest = "^7.2.1"
+pytest-xdist = "^3.1.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-sv"
+testpaths = []

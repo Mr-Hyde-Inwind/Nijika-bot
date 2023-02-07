@@ -1,0 +1,13 @@
+plugins:
+  common_prefix: 'plugins'
+  plugin_lst:
+    -
+      path: 'basic_plugins'
+      exclude: []
+    -
+      path: 'plugins'
+      excldue: []
+  
+    -
+      path: 'test_plugins'
+      exclude: ['git_remind', 'essence_message', 'repeat_after_nijigen']
