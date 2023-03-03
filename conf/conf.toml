@@ -1,0 +1,10 @@
+
+proxy = 'http://192.168.0.106:7890'
+
+download-path = ''
+
+[log]
+path = 'log'
+level = 'warning'
+rotation = '1 day'
+rentation = '10 days'

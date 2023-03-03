@@ -1,12 +1,12 @@
 from pathlib import Path
 
-IMAGE_PATH = Path() / 'resources' / 'image'
+IMAGE_PATH = Path() / 'res' / 'image'
 
-FONT_PATH = Path() / 'resources' / 'font'
+FONT_PATH = Path() / 'res' / 'font'
 
-AUDIO_PATH = Path() / 'resources' / 'audio'
+AUDIO_PATH = Path() / 'res' / 'audio'
 
-DATABASE_PATH = Path() / 'resources' / 'database'
+DATABASE_PATH = Path() / 'res' / 'database'
 
 
 def load_path():

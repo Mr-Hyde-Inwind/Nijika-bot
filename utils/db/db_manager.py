@@ -15,21 +15,25 @@ class DbConnection():
   def __repr__(self):
     return "DB connection to {url}".format(url = self._db_url)
 
-  def execute(self, sql, params = ()):
+  def execute(self, sql, params = {}):
     if sql.strip().lower().startswith('select'):
       errmsg = '{parameter}...: SELECT is not allowed in execute'.format(parameter = sql[:21])
       raise ValueError(errmsg)
     self._conn.cursor().execute(sql, params)
     self._conn.commit()
   
-  def query(self, sql) -> list:
+  def query(self, sql, params = {}) -> list:
     if not sql.strip().lower().startswith('select'):
       errmsg = '{parameter}...: Only allowed SELECT SQL when querying DB'.format(parameter = sql[:21])
       raise ValueError(errmsg)
 
     cursor = self._conn.cursor()
-    cursor.execute(sql)
+    cursor.execute(sql, params)
     return cursor.fetchall()
+  
+  def close(self):
+    self._conn.commit()
+    self._conn.close() 
 
 
 def get_connection(db_path: str) -> DbConnection:
@@ -37,3 +41,7 @@ def get_connection(db_path: str) -> DbConnection:
 
 def get_default_connection() -> DbConnection:
   return get_connection(DEFAULT_DB)
+
+def close():
+  for conn in _connections.values():
+    conn.close()

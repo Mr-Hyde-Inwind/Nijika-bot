@@ -10,4 +10,4 @@ plugins:
   
     -
       path: 'test_plugins'
-      exclude: ['git_remind', 'essence_message', 'repeat_after_nijigen']
+      exclude: ['git_remind', 'essence_message', 'random_ban']

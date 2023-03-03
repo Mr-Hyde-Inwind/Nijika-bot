@@ -1,0 +1,162 @@
+rsshub = 'https://rsshub.rssforever.com'
+user-agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57'
+
+rss-servers = [
+
+]
+
+[[subscribe]]
+  id = 'bbc-world'
+  url =  '/bbc/world'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = true
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+[[subscribe]]
+  id = 'nhk-cn'
+  url =  '/nhk/news/zh'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = true
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+# [[subscribe]]
+#   id = 'hpoi'
+#   url =  '/hpoi/info/all'
+#   max_retrieve = 5
+#   refresh_interval = 3600000
+#   need_proxy = false
+#   silent = true
+# 
+#   [[subscribe.dest]]
+#     type = 'p'
+#     id = 2764143885
+
+[[subscribe]]
+  id = 'bilibili-潛水的離子魚'
+  url =  '/bilibili/user/dynamic/557005451'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = false
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+[[subscribe]]
+  id = 'bilibili-日本総大将'
+  url =  '/bilibili/user/dynamic/202187010'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = false
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+[[subscribe]]
+  id = 'bilibili-奇妙深刻'
+  url =  '/bilibili/user/dynamic/8404048'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = false
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+[[subscribe]]
+  id = 'bilibili-博伟君'
+  url =  '/bilibili/user/dynamic/443126'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = false
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+[[subscribe]]
+  id = 'bilibili-LunaticMosfet'
+  url =  '/bilibili/user/dynamic/1297592012'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = false
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  [[subscribe.dest]]
+    type = 'g'
+    id = 901413269
+
+[[subscribe]]
+  id = 'mikan-bangumi'
+  url =  'https://mikanani.me/RSS/MyBangumi?token=D%2b5maNte5uUujcgeridfG8I70y5cqo20gAPSgdQYMTw%3d'
+  max_retrieve = 5
+  refresh_interval = 3600000
+  need_proxy = false
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'p'
+    id = 2764143885
+  # [[subscribe.dest]]
+  #   type = 'g'
+  #   id = 901413269
+
+[[subscribe]]
+  id = 'twitter-HaneAme'
+  url =  '/twitter/user/haneame_cos/excludeReplies=true&showAuthorInTitle=false&showAuthorInDesc=false&addLinkForPics=true&includeRts=false'
+  max_retrieve = 5
+  refresh_interval = 1200000
+  need_proxy = true
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'g'
+    id = 952559634
+
+[[subscribe]]
+  id = 'twitter-AsaNagi'
+  url =  '/twitter/user/Victim_Girls/excludeReplies=true&showAuthorInTitle=false&showAuthorInDesc=false&addLinkForPics=true&includeRts=false'
+  max_retrieve = 5
+  refresh_interval = 1200000
+  need_proxy = true
+  silent = true
+
+  [[subscribe.dest]]
+    type = 'g'
+    id = 952559634
